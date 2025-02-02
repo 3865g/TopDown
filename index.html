@@ -8,21 +8,17 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
+      <div id="unity-container" style="position: absolute; width: 100%; height: 100%; left: 0%; top: 0%;">
+          <canvas id="unity-canvas" style="position: absolute; width: 100%; height: 100%;"></canvas>
+          <div id="unity-loading-bar">
+              <div id="unity-logo"></div>
+              <div id="unity-progress-bar-empty">
+                  <div id="unity-progress-bar-full"></div>
+              </div>
+          </div>
+          <div id="unity-warning"> </div>
+         
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">TopDownSpaceShip</div>
-      </div>
-    </div>
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -57,11 +53,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TopDownTelegram.loader.js";
+      var loaderUrl = buildUrl + "/TopDownWeb.loader.js";
       var config = {
-        dataUrl: buildUrl + "/TopDownTelegram.data",
-        frameworkUrl: buildUrl + "/TopDownTelegram.framework.js",
-        codeUrl: buildUrl + "/TopDownTelegram.wasm",
+        dataUrl: buildUrl + "/TopDownWeb.data",
+        frameworkUrl: buildUrl + "/TopDownWeb.framework.js",
+        codeUrl: buildUrl + "/TopDownWeb.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TopDownSpaceShip",
@@ -103,8 +99,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
 
       loadingBar.style.display = "block";
