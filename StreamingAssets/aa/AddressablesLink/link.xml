@@ -22,6 +22,7 @@
     <type fullname="Scripts.Enemy.LootPiece" preserve="all" />
     <type fullname="Scripts.Enemy.LootSpawner" preserve="all" />
     <type fullname="Scripts.Enemy.RotateToHero" preserve="all" />
+    <type fullname="Scripts.Enemy.RotateWeapon" preserve="all" />
     <type fullname="Scripts.Enemy.TriggerObserver" preserve="all" />
     <type fullname="Scripts.Hero.Ability.AbilityHolder" preserve="all" />
     <type fullname="Scripts.Hero.Ability.AbilityManager" preserve="all" />
@@ -49,6 +50,7 @@
     <type fullname="Scripts.UI.Elements.HpBar" preserve="all" />
     <type fullname="Scripts.UI.Elements.LookAtCamera" preserve="all" />
     <type fullname="Scripts.UI.Elements.LootCounter" preserve="all" />
+    <type fullname="SubtractParentRotation" preserve="all" />
     <type fullname="TabsManager" preserve="all" />
   </assembly>
   <assembly fullname="SimpleInput.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
